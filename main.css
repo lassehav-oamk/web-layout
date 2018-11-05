@@ -1,0 +1,47 @@
+.floater
+{
+    float: left;
+}
+
+.w33
+{
+    width: 33.33% !important;
+}
+
+.box-sizing
+{
+    box-sizing: border-box;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.blue
+{
+    background-color: blue;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}

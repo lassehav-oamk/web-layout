@@ -1,0 +1,93 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Float layout demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <div class="floatContainer">
+        <h1>Layout with Float</h1>
+        <hr>
+        <h2>Floating without clearing</h2>
+
+        <div class="floater red box"></div>
+        <div class="floater blue box"></div>
+        <div class="floater green box"></div>
+        <div>
+            Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
+        </div>
+        <div class="red box"></div>
+        <div class="blue box"></div>
+        <div class="green box"></div>
+
+        <div class="clear"></div>
+        <hr>
+
+        <h2>Floating with clearing </h2>
+
+        <div class="floater red box"></div>
+        <div class="floater blue box"></div>
+        <div class="floater green box"></div>
+        <div class="clear"></div>
+        <div>
+            Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
+        </div>
+        <div class="red box"></div>
+        <div class="blue box"></div>
+        <div class="green box"></div>
+
+        <hr>
+
+        <h2>Floating with 'clearfix' appended after, but requires a container div to be used</h2>
+
+        <div class="clearfix">
+            <div class="floater red box"></div>
+            <div class="floater blue box"></div>
+            <div class="floater green box"></div>
+        </div>
+        <div>
+            Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
+        </div>
+        <div class="red box"></div>
+        <div class="blue box"></div>
+        <div class="green box"></div>
+
+        <hr>
+
+        <h2>Floating with clearing and normal box-sizing, which does not take borders into width calculations</h2>
+        <p>Box width 33.33% and 1px borders</p>
+
+        <div class="floater  w33 box red"></div>
+        <div class="floater box w33 blue"></div>
+        <div class="floater box w33 green"></div>
+        <div class="clear"></div>
+
+        <div>
+            Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
+        </div>
+
+        <hr>
+
+        <h2>Floating with clearing and border-box sizing, which calculates width with borders</h2>
+        <p>Box width 33.33% and 1px borders</p>
+
+        <div class="floater box w33 box-sizing red"></div>
+        <div class="floater box w33 box-sizing blue"></div>
+        <div class="floater box w33 box-sizing green"></div>
+        <div class="clear"></div>
+
+        <div>
+            Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
+        </div>
+
+        <hr>
+
+
+
+    </div>
+
+</body>
+</html>
