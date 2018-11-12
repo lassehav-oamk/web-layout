@@ -1,0 +1,61 @@
+.responsiveWidthContainer
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(200,200,200);
+    padding: 10px;
+}
+
+.floatDemoBox
+{    
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}
+
+.innerBox
+{
+    background-color: white;
+    padding: 15px;
+}
+
+
+.flexboxParent
+{
+    display: flex;
+    width: 100%;
+}
+
+.flexItemBox
+{
+   width: 33.33%; 
+   margin: 10px;
+   background-color: white;
+   padding: 15px;
+}
+
+.flexboxParentVerticalMenu
+{
+    display: flex;
+    height: 1000px;
+    border: 1px solid red;
+    background-color: rgb(200,200,200);
+    font-size: 40px;
+    flex-direction: column;
+    justify-content: center;      
+    width: 300px;    
+    
+}
+
+.flexMenuItem
+{
+    flex: 1 1 auto;    
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

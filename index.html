@@ -5,6 +5,7 @@
     <title>Float layout demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="flexboxDemo.css" />
 </head>
 <body>
 
@@ -82,12 +83,87 @@
         <div>
             Vivamus condimentum, dolor vel condimentum ultrices, urna enim commodo lacus, sit amet fermentum turpis sem id mauris. Proin luctus risus ac libero rutrum lobortis. Donec ut arcu vel nisi fringilla imperdiet ac a nulla. Suspendisse ultricies, justo a tempor gravida, turpis nisl aliquet eros, ac viverra mauris nulla nec massa. Sed eget gravida leo. Donec vitae vulputate nibh. Aenean ultrices lacus nisl.
         </div>
-
         <hr>
-
-
-
     </div>
+
+    <div>
+        <h1>Layout with flexbox</h1>
+
+        <h2>Demo 1 - Equal height columns</h2>
+        <p>
+                The equal height colum problem is quite difficult with float layout. It is possible of course to set fixed column height, but it does not work very well if the site has to be responsive or if the content is dynamically inserted.                
+        </p>
+        <p>
+            Example below demonstrates the problem with three columns, which should be equal height.
+        </p>
+        
+        <div class="responsiveWidthContainer">
+            <div class="floatDemoBox">
+                <div class="innerBox">
+                    <h3>Etiam a lacinia enim</h3>
+                    <p>Aliquam quis sagittis quam. Nullam ornare nulla arcu, quis sollicitudin leo mollis feugiat. Aenean convallis magna quis turpis volutpat posuere. Curabitur dapibus dignissim est vel maximus. Nulla mauris leo, ultrices id feugiat vel, pellentesque a erat. Nam sit amet consectetur risus. </p>
+                </div>                
+            </div>
+            <div class="floatDemoBox">
+                <div class="innerBox">
+                    <h3>Aliquam rhoncus porta congue</h3>
+                    <p>Proin augue nisi, luctus eu diam porta, dictum dapibus erat. Nunc pharetra dictum libero, ut cursus magna posuere quis. Maecenas imperdiet, leo nec laoreet volutpat, est nulla mollis turpis, nec scelerisque purus risus vitae nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi condimentum eget lacus et vulputate. Aenean interdum sem odio, tincidunt ultrices nibh ornare vitae. Sed ut varius velit.</p>
+                </div>
+            </div>
+            <div class="floatDemoBox">
+                <div class="innerBox">
+                    <h3>Quisque at felis suscipit</h3>
+                    <p>Phasellus bibendum cursus mauris, sed faucibus ligula facilisis eget. Sed faucibus, nibh ac varius finibus, lectus ante iaculis odio, quis dictum urna tellus nec massa. Suspendisse commodo, neque fringilla interdum finibus, magna nulla sollicitudin enim, id dapibus urna enim egestas mi. Aenean nec tellus metus. Donec non rhoncus nunc, nec vehicula tellus. Morbi non nibh mollis, efficitur turpis quis, commodo mauris. Suspendisse faucibus sapien vel libero cursus luctus. Integer feugiat egestas efficitur. Sed elementum, sapien id placerat consectetur, tortor dolor vulputate erat, quis placerat dolor sem quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas aliquam ligula ac felis imperdiet, vitae euismod lacus finibus. Pellentesque in aliquet arcu, nec sodales ipsum. Duis at faucibus orci. Curabitur eu mauris quis elit vulputate volutpat in nec lectus.</p>
+                </div>                
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <p>Same example as above but with flexbox.</p>
+        <div class="responsiveWidthContainer">
+            <div class="flexboxParent">
+                <div class="flexItemBox">
+                    <div class="innerBox">
+                        <h3>Etiam a lacinia enim</h3>
+                        <p>Aliquam quis sagittis quam. Nullam ornare nulla arcu, quis sollicitudin leo mollis feugiat. Aenean convallis magna quis turpis volutpat posuere. Curabitur dapibus dignissim est vel maximus. Nulla mauris leo, ultrices id feugiat vel, pellentesque a erat. Nam sit amet consectetur risus. </p>
+                    </div>
+                </div>
+                <div class="flexItemBox">
+                    <div class="innerBox">
+                        <h3>Etiam a lacinia enim</h3>
+                        <p>Phasellus bibendum cursus mauris, sed faucibus ligula facilisis eget. Sed faucibus, nibh ac varius finibus, lectus ante
+                        iaculis odio, quis dictum urna tellus nec massa. Suspendisse commodo, neque fringilla interdum finibus, magna nulla
+                        sollicitudin enim, id dapibus urna enim egestas mi. Aenean nec tellus metus. Donec non rhoncus nunc, nec vehicula
+                        tellus. Morbi non nibh mollis, efficitur turpis quis, commodo mauris. Suspendisse faucibus sapien vel libero cursus
+                        luctus. Integer feugiat egestas efficitur. Sed elementum, sapien id placerat consectetur, tortor dolor vulputate erat,
+                        quis placerat dolor sem quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. Maecenas aliquam ligula ac felis imperdiet, vitae euismod lacus finibus. Pellentesque in aliquet arcu, nec
+                        sodales ipsum. Duis at faucibus orci. Curabitur eu mauris quis elit vulputate volutpat in nec lectus.</p>
+                    </div>
+                </div>
+                <div class="flexItemBox">
+                    <div class="innerBox">
+                        <h3>Etiam a lacinia enim</h3>
+                        <p>Proin augue nisi, luctus eu diam porta, dictum dapibus erat. Nunc pharetra dictum libero, ut cursus magna posuere quis.
+                        Maecenas imperdiet, leo nec laoreet volutpat, est nulla mollis turpis, nec scelerisque purus risus vitae nibh. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi condimentum eget lacus et
+                        vulputate. Aenean interdum sem odio, tincidunt ultrices nibh ornare vitae. Sed ut varius velit.</p>
+                    </div>                    
+                </div>
+                
+            </div>
+        </div>  
+        <h2>Demo 1 - Vertical flexbox menu with growing items</h2>              
+        <div class="flexboxParentVerticalMenu">
+            <div class="flexMenuItem blue">Option 1</div>
+            <div class="flexMenuItem green">Option 2</div>
+            <div class="flexMenuItem yellow">Option 3</div>
+            <div class="flexMenuItem pink">Option 4</div>            
+        </div>
+    </div>
+
+
+
 
 </body>
 </html>
